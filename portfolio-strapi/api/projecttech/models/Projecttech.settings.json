@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "projecttech",
+  "info": {
+    "name": "projecttech",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "projects": {
+      "collection": "project",
+      "via": "projectteches"
+    },
+    "skill": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "project",
+  "info": {
+    "name": "project",
+    "description": "projects to showcase"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "link-gh": {
+      "default": "",
+      "type": "string"
+    },
+    "link-site": {
+      "default": "",
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "projectteches": {
+      "collection": "projecttech",
+      "via": "projects",
+      "dominant": true
+    }
+  }
+}

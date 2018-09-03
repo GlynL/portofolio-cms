@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/projecttech",
+      "handler": "Projecttech.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projecttech/count",
+      "handler": "Projecttech.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projecttech/:_id",
+      "handler": "Projecttech.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/projecttech",
+      "handler": "Projecttech.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/projecttech/:_id",
+      "handler": "Projecttech.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/projecttech/:_id",
+      "handler": "Projecttech.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
